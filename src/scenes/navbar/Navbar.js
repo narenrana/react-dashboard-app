@@ -29,7 +29,7 @@ class Navbar extends React.Component {
 
         return (
             <header>
-                <Toolbar className="lytics-navbar theme-navbar">
+                <Toolbar className="theme-navbar">
                     <ToolbarGroup >
                         
                     </ToolbarGroup>
@@ -41,7 +41,7 @@ class Navbar extends React.Component {
     
                         <FontIcon className="muidocs-icon-custom-sort" />
                         <ToolbarSeparator />
-                        <IconButton tooltip="Show/Hide settings" iconStyle={{}} onClick={this.props.toggleShowSettings}>
+                        <IconButton style={{color:'#fff !important'}} tooltip="Show/Hide settings" iconStyle={{}} onClick={this.props.toggleShowSettings}>
                             <Settings />
                         </IconButton>
                         <IconButton tooltip="Log Off" iconStyle={{}} onClick={this.props.logOut}>
