@@ -1,0 +1,207 @@
+@import "styles/global";
+
+.theme-navbar {
+    background-color: $navbar_color!important;
+    .navbar-text-local {
+        color: $navbar_color_background!important;
+    }
+    .item {
+        color: $navbar_color;
+        background-color: $body_background_color;
+    }
+    .item:hover {
+        color: $body_background_color;
+        background-color: $hoover_background_color;
+    }
+    .dead {
+        color: $navbar_color;
+        background-color: $body_background_color;
+    }
+}
+
+.sidebar-root {
+    position: absolute;
+    top: 10px !important;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+.sidebar-sidebar {
+    /*zIndex: 2;*/
+    position: absolute;
+    top: 50px !important;
+    bottom: 0;
+    box-shadow: 0 0 0 0 !important;
+    /*transition: transform .3s ease-out;
+    WebkitTransition: -webkit-transform .3s ease-out;
+    willChange: transform;
+    overflowY: auto;*/
+}
+
+.sidebar-content {
+    /*position: absolute;*/
+    top: 50px !important;
+    left: 0px;
+    right: 0px !important;
+
+    /*bottom: 0;
+    overflow: auto;
+    transition: left .3s ease-out, right .3s ease-out;*/
+
+    padding: 0 50px 0 50px !important;
+}
+
+.sidebar-overlay {
+    /*zIndex: 1;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease-out;
+    /*background: rgba(0 0 0 .3);*/
+}
+
+sidebar-dragHandle {
+    zIndex: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.help-button {
+    position: fixed;
+    bottom: 70%;
+    right: 0%;
+    opacity: 0.6;
+    z-index: 1301;
+}
+
+.help-button-open {
+    position: fixed;
+    bottom: 70%;
+    right: 420px;
+    opacity: 0.6;
+    z-index: 1301;
+}
+
+.lytics-navbar {
+    height: 45px !important;
+
+    .navbar-text-local {
+        font-size: 16px !important;
+    }
+
+    &--logo {
+        background: $navbar_color_background;
+        padding: 5px 5px 4px 5px;
+        margin: 0 16px 0 -22px;
+
+        img {
+            height: 32px;
+        }
+    }
+
+    &--alert {
+
+        &-danger, &-normal {
+            padding: 0 6px 0 5px;
+            color: white;
+            border-radius: 100%;
+            font-size: 13px;
+            line-height: 16px;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+
+        &-danger {
+            background-color: red;
+        }
+
+        &-normal {
+            background-color: green;
+        }
+    }
+
+    .toggle-variables {
+        margin-left: 30px;
+    }
+
+    svg path {
+        color: white;
+    }
+}
+
+.alerts_dialog {
+    > div:first-child > div {
+        width: 60% !important;
+        min-width: 500px;
+    }
+
+    .panel {
+        margin-bottom: 0;
+    }
+}
+
+.bs-glyphicons {
+    margin: 30px -10px 20px;
+    overflow: hidden;
+    li {
+        float: left;
+        width: 100%;
+        font-size: 16px;
+        padding: 2;
+        line-height: 1.4;
+        text-align: center;
+
+        padding: 10px;
+        clear: left;
+    }
+
+    .glyphicon {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .glyphicon-class {
+        display: block;
+        text-align: center;
+        word-wrap: break-word; /* Help out IE10+ with class names */
+
+    }
+}
+
+.bs-glyphicons-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.bs-glyphicons-list-items-home {
+    height: 80px;
+}
+
+@media (min-width: 768px) {
+    .bs-glyphicons {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.breadcrumbs {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 1100px) {
+        > div {
+            width: 400px !important;
+        }
+    }
+}
+

@@ -1,0 +1,12 @@
+.toggle-variables {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+
+    > div {
+        border-radius: 50% !important;
+        overflow: hidden;
+        width: 36px;
+        min-width: 36px !important;
+    }
+}

@@ -1,0 +1,19 @@
+
+
+//GLOBAL VARIABLES:
+$navbar_color: #393d40 ;
+$navbar_color_background: #fff;
+$body_background_color: #fff;
+$hoover_background_color: #8cc1ed;
+
+
+
+#app {
+    font: 'Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif';
+    min-width: 550px;
+//    zoom: 80%;
+}
+
+body {
+    background-color: $body_background_color;
+}

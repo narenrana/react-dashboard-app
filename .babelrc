@@ -1,0 +1,28 @@
+{
+  "presets": [
+    "latest",
+    "react",
+    "stage-1"
+  ],
+  "plugins": [
+      [
+        "react-intl", {
+            "messagesDir": "./service_data/language/messages",
+            "enforceDescriptions": false
+        }
+      ]
+  ],
+  "env": {
+    "development": {
+      "presets": [
+        "react-hmre"
+      ]
+    },
+    "production": {
+      "plugins": [
+        "transform-react-constant-elements",
+        "transform-react-remove-prop-types"
+      ]
+    }
+  }
+}
