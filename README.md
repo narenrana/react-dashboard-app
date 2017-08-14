@@ -1,4 +1,4 @@
-# React Lytics!
+# Project Setup Guidelines
 
 ##Please see this artical on how components and scenes are different (we try to follow this folder structure):
 https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1#.b1nwuzsbs
