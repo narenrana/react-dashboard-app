@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import {ButtonToolbar, Button} from 'react-bootstrap';
  
  
 
@@ -23,10 +24,14 @@ class ActionPanel extends React.Component {
             <div className="action-panel" >
                 <nav className="navbar navbar-default">
                  <div className="container-fluid">
-                        <div className="navbar-header">
-                            <a className="navbar-brand" href="#">
-                                <img alt="Brand" src="..."/>
-                             </a>
+                        <div className="navbar-header pull-right">
+                            <div className="navbar-brand" href="#">
+                                 <ButtonToolbar>
+                                     <Button bsStyle="danger"  bsSize="xsmall"><i className="fa fa-plus-square" /> New</Button>
+                                     <Button bsStyle="info"  bsSize="xsmall"><i className="fa fa-cog" /></Button>
+                                      <Button bsStyle="info"  bsSize="xsmall"><i className="fa fa-align-justify" /> </Button>
+                                 </ButtonToolbar>
+                             </div>
                           </div>
                         </div>    
                 </nav>

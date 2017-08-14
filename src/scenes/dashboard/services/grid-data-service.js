@@ -1,6 +1,7 @@
 
 export function getColDef() {
     return [
+         {headerName: "".toUpperCase(), field: "f_id", checkboxSelection:true, headerCheckboxSelection: true, width:30},
         {headerName: "Name".toUpperCase(), field: "first_name"},
         {headerName: "Company Name".toUpperCase(), field: "company_name"},
         {headerName: "Email".toUpperCase(), field: "email"},
@@ -22,6 +23,8 @@ export function getColDef() {
 
 export function getData(data) {
     const contacts= data.contacts || [];
-    return contacts;
+    return contacts.map(val => {
+        return {...val};
+    });
 }
 
